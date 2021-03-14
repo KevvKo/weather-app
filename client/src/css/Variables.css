@@ -1,7 +1,7 @@
 html{
 
     /* colors */
-    --primary-color:     #6ea6cc;
+    --primary-color:     #5688a0;
     --second-color:      #3f7384;
     --accent-color:      #1956ff;
     
@@ -13,7 +13,7 @@ html{
     --grey-accent:       #666;
     --black-accent:      #1e1e1e;
     /* font */
-    --font-family:       "Open Sans";
+    --font-family:       "Open sans";
     
     --font-size-larg:    1.125rem;
     --font-size-normal:  1rem;
