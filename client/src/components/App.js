@@ -1,9 +1,15 @@
-import '../scss/App.scss';
+import '../css/App.css';
+
+import Header from './Header'
+import Main from './Main'
+import Footer from './Footer'
 
 function App() {
   return (
     <div>
-      Hello React. :)
+      <Header/>
+      <Main/>
+      <Footer/>
     </div>
   );
 }
