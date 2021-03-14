@@ -1,0 +1,31 @@
+.weatherCard{
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    /* background-color: var(--white-accent); */
+    border-radius: 10px;
+    background: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.weatherCard:before{
+    content: "";
+    position: absolute;
+    background: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
+    filter: blur(10px);
+    margin: -20px;
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
