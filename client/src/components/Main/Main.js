@@ -1,6 +1,6 @@
-import '../css/Main.css'
-import './weatherCard'
-import WeatherCard from './weatherCard'
+import './Main.css'
+import WeatherCard from '../WeatherCard/weatherCard'
+
 function Main() {
   return (
     <div className="main">
