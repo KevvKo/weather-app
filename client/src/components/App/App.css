@@ -4,4 +4,5 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    background-image: linear-gradient(to bottom, #474d6b, #586682, #6b8099, #819ab0, #99b5c6);
 }

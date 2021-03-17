@@ -5,16 +5,18 @@
     left: 0;
     bottom: 0;
     padding: 0 var(--spacer);
-    line-height: 2.7rem
+    line-height: 2.7rem;
+    font-family: var(--font-family);
+
 }
 
 a{
-    color: var(--accent-color);
+    color: var(--second-color);
     text-decoration: none;
 } 
 
 a:hover{
-    color: var(--second-color);
+    color: var(--primary-color);
     text-decoration: none;
     transition: var(--transition);
 } 
