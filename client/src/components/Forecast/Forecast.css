@@ -1,0 +1,35 @@
+.forecast{
+    width: 300px;
+}
+
+.weather-panel{
+    display: flex;
+    justify-content: center;
+}
+
+.temperature {
+    display:flex;
+    align-items: center;
+    font-size: 80px;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+}
+
+.data span:first-child{
+    font-size: 18px;
+}
+
+.data span:not(first-child){
+    font-size: 13px;
+}
+
+.data span{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}

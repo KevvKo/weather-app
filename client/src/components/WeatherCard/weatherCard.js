@@ -5,9 +5,7 @@ function WeatherCard() {
   
   return (
     <div className="weatherCard">
-      <div className="content">
         <Forecast />
-      </div>
     </div>
   );
 }

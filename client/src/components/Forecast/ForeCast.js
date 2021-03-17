@@ -1,6 +1,8 @@
 
 import { useState, useEffect } from 'react'
 import './Forecast.css';
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 function Forecast() {
 
@@ -16,16 +18,81 @@ function Forecast() {
             }
         })
         .then(response => response.json())
-        .then(data => setResponseObject( data ));
+        .then(data => setResponseObject( data ))
+        .then(data => console.log(responseObject))
+
     }
 
     useEffect(() => {
         getForecast()
     }, []) 
 
+
+    const getName = () => {
+        return "Jena"
+        // return responseObject.name
+    }
+
+    const getTemperature     = () => {
+        return 4
+        if(responseObject.main){
+            // return responseObject.main.temp
+        }
+    }
+
+    const getMaxTemperature     = () => {
+        return 6
+        // if(responseObject.main){
+        //     return responseObject.main.temp_max
+        // }    
+    }
+
+    const getMinTemperature     = () => {
+        return 0
+        // if(responseObject.main){
+        //     return responseObject.main.temp_min
+        // }    
+    }
+
+    const getWeatherDescription     = () => {
+        return 'cloudly'
+        // if(responseObject.weather){
+        //     return responseObject.weather[0].description
+        // }    
+    }
+
+
     return (
         <div className="forecast">
-            {/* {JSON.stringify(responseObject)} */}
+            <div className="weather-panel">
+                <div className="temperature">
+                    <span>
+                        {getTemperature()}
+                    </span>
+                </div>
+                <div className="data">
+                    <span>
+                    °C
+                    </span>
+                    <span>
+                        <ArrowUpwardIcon style={{ fontSize: 15 }}/>
+                        <span>
+                            {getMaxTemperature()}°
+                        </span>
+
+                    </span>
+                    <span>
+                        <ArrowDownwardIcon style={{ fontSize: 15 }}/>
+                        <span>
+                            {getMinTemperature()}°
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <p>{getName()}</p>
+                <p>{getWeatherDescription()}</p>
+            </div>
         </div>
     )
 }
