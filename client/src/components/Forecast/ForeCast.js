@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react'
 function Forecast() {
 
     let [responseObject, setResponseObject] = useState({})
+    
+    let iconUrl = '' ;
 
     const getForecast = () => {
 
@@ -16,6 +18,7 @@ function Forecast() {
             })
             .then(response => response.json())
             .then(data => setResponseObject( data ))
+    
     //     fetch("https://community-open-weather-map.p.rapidapi.com/weather?q=Jena", {
     //         "method": "GET",
     //         "headers": {

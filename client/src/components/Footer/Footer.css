@@ -6,6 +6,7 @@
     bottom: 0;
     padding: 0 var(--spacer);
     line-height: 2.7rem;
+    font-size: var(--font-size-small);
 
 }
 

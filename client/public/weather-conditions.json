@@ -1,0 +1,11 @@
+{
+    "clear sky":        "var(--clear-weather-color)", 
+    "few clouds":       "var(--cloudly-weather-color)",
+    "scattered clouds": "var(--cloudly-weather-color)",
+    "broken clouds":    "var(--cloudly-weather-color)",
+    "shower rain":      "var(--grey-weather-color)",
+    "rain" :            "var(--grey-weather-color)",
+    "thunderstorm":     "var(--storm-weather-color)",
+    "snow":             "var(--mist-weather-color)",
+    "mist" :            "var(--mist-weather-color)"
+}

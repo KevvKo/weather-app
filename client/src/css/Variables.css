@@ -13,17 +13,23 @@ html{
     --grey-accent:          #666;
     --black-accent:         #1e1e1e;
 
-    --font-color:           #b2b2b2;
+    --font-color:           #f9f9f9;
 
     --background-color:     #f7f7f7;
 
     --max-temp-color:       #b5273a;
     --min-temp-color:       #0315b7;
+
+    --clear-weather-color:  linear-gradient(183deg, rgba(22,79,137,1) 0%, rgba(55,222,246,1) 78%); 
+    --mist-weather-color:   linear-gradient(183deg, rgba(10,51,71,1) 0%, rgba(98,166,194,1) 86%); 
+    --grey-weather-color:   linear-gradient(183deg, rgba(79,106,119,1) 0%, rgba(161,198,214,1) 86%); 
+    --storm-weather-color:  linear-gradient(190deg, rgba(35,43,46,1) 0%, rgba(56,80,91,1) 86%); 
+    --cloudy-weather-color: linear-gradient(190deg, rgba(67,106,121,1) 0%, rgba(33,111,141,1) 86%); 
     /* font */
     --font-family:          "Arial";
     
     --font-size-larg:       1.125rem;
-    --font-size-normal:     1rem;
+    --font-size-regular:    1rem;
     --font-size-small:      0.875rem;
     
     --font-weight-bold:      600;
@@ -34,4 +40,6 @@ html{
     --spacer:               1rem;
 
     --transition:           0.2s;
+
+
 }
