@@ -1,10 +1,10 @@
 import './Main.css'
-import WeatherCard from '../WeatherCard/weatherCard'
+import Forecast from '../Forecast/ForeCast'
 
 function Main() {
   return (
     <div className="main">
-      <WeatherCard />
+      <Forecast />
     </div>
   );
 }

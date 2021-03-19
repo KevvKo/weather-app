@@ -1,5 +1,9 @@
 .forecast{
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+
 }
 
 .weather-panel{
@@ -7,29 +11,45 @@
     justify-content: center;
 }
 
+
+.town{
+    font-size: 24px;
+}
+
+.weatherDescription{
+    font-size: 14px;
+}
+
+p{
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
 .temperature {
-    display:flex;
-    align-items: center;
-    font-size: 80px;
+    text-align: center;
+    font-size: 40px;
 }
 
 .data{
     display: flex;
-    flex-direction: column;
-}
-
-.data span:first-child{
-    font-size: 18px;
-}
-
-.data span:not(first-child){
+    justify-content: center;
     font-size: 13px;
 }
 
-.data span{
+.data div{
+    /* wdth: 50%; */
     text-align: center;
+    margin: 10px 5px;
 }
 
-p{
-    text-align: center;
+.data span{
+    margin-left: 5px;
+}
+
+.wi-thermometer{
+    color: var(--max-temp-color);
+}
+
+.wi-thermometer-exterior{
+    color: var(--min-temp-color);
 }
