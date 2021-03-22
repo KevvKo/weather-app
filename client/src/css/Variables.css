@@ -25,13 +25,15 @@ html{
     --grey-weather-color:   linear-gradient(183deg, rgba(79,106,119,1) 0%, rgba(161,198,214,1) 86%); 
     --storm-weather-color:  linear-gradient(190deg, rgba(35,43,46,1) 0%, rgba(56,80,91,1) 86%); 
     --cloudy-weather-color: linear-gradient(190deg, rgba(67,106,121,1) 0%, rgba(33,111,141,1) 86%); 
+    
     /* font */
-    --font-family:          "Arial";
+    --font-family:              "Arial";
     
-    --font-size-larg:       1.125rem;
-    --font-size-regular:    1rem;
-    --font-size-small:      0.875rem;
-    
+    --font-size-larg:           1.125rem;
+    --font-size-regular:        1rem;
+    --font-size-small:          0.875rem;
+    --font-size-temperature:    2.5rem;
+
     --font-weight-bold:      600;
     --font-weight-regular:   400;
     --font-weight-light:     200;
