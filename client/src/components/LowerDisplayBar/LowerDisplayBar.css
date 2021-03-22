@@ -1,0 +1,16 @@
+.lowerDisplayBar{
+    text-align: center;
+}
+
+.lowerDisplayBar div{
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.wi-thermometer{
+    color: var(--max-temp-color);
+}
+
+.wi-thermometer-exterior{
+    color: var(--min-temp-color);
+}

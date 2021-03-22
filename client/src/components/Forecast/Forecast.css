@@ -6,53 +6,9 @@
 
 }
 
-.weather-panel{
-    display: flex;
-    justify-content: center;
-}
-
-.town{
-    font-size: 24px;
-}
-
-.weatherDescription{
-    font-size: 14px;
-}
-
-p{
-    margin: 0.5rem 0;
-    text-align: center;
-}
-
-.temperature {
-    text-align: center;
-    font-size: var(--font-size-temperature);
-    font-weight: var(--font-weight-bold)
-}
-img{
-    display: inline-block;
-}
-
 .data{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-size: var(--font-size-regular);
-}
-
-.data div{
-    /* wdth: 50%; */
-    text-align: center;
-    margin: 10px 5px;
-}
-
-.data span{
-    margin-left: 5px;
-}
-
-.wi-thermometer{
-    color: var(--max-temp-color);
-}
-
-.wi-thermometer-exterior{
-    color: var(--min-temp-color);
 }

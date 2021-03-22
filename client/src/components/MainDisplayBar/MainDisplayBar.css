@@ -1,0 +1,7 @@
+.mainDisplayBar {
+    text-align: center;
+    font-size: var(--font-size-temperature);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    margin: 10px 5px;
+}
