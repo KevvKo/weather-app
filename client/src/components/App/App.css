@@ -7,6 +7,12 @@
     font-family: var(--font-family);
     font-size: var(--font-size-regular);
     color: var(--font-color);
-    background: var(--grey-weather-color);
 }
 
+.clear-weather{ background: var(--clear-weather-color) }
+.mist-weather{ background: var(--mist-weather-color) }
+.grey-weather{ background: var(--grey-weather-color) }
+.storm-weather{ background: var(--storm-weather-color) }
+.cloudy-weather{ background: var(--cloudly-weather-color) }
+.drizzle{ background: var(--cloudly-weather-color) }
+.snow{ background: var(--snow-weather-color) }
