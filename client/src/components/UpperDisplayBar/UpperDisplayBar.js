@@ -17,7 +17,7 @@ function UpperDisplayBar(){
     }
 
     return(
-        <div class="upperDisplayBar">
+        <div className="upperDisplayBar">
                 <p className="town">{getName()}</p>
                 <p className="weatherDescription">{getWeatherDescription()}</p>
         </div>

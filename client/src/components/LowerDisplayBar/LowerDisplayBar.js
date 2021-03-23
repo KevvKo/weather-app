@@ -19,7 +19,7 @@ function LowerDisplayBar(){
     }
 
     return(
-        <div class="lowerDisplayBar">
+        <div className="lowerDisplayBar">
             <div>
                 <i className="wi wi-thermometer"></i>
                 <span>{getMaxTemperature()}°</span>

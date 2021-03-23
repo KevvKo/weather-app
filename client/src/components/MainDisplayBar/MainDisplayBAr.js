@@ -13,7 +13,7 @@ function MainDisplayBar(){
     }
 
     return(
-        <div class="mainDisplayBar">
+        <div className="mainDisplayBar">
             <span>{getTemperature()}</span>
             <span>°C</span>
         </div>
