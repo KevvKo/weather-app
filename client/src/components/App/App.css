@@ -9,10 +9,10 @@
     color: var(--font-color);
 }
 
-.clear-weather{ background: var(--clear-weather-color) }
-.mist-weather{ background: var(--mist-weather-color) }
-.grey-weather{ background: var(--grey-weather-color) }
-.storm-weather{ background: var(--storm-weather-color) }
-.cloudy-weather{ background: var(--cloudly-weather-color) }
+.clear-sky{ background: var(--clear-weather-color) }
+.mist{ background: var(--cloudly-weather-color) }
+.rain{ background: var(--grey-weather-color) }
+.thunderstorm{ background: var(--storm-weather-color) }
+.few-clouds{ background: var(--cloudly-weather-color) }
 .drizzle{ background: var(--cloudly-weather-color) }
 .snow{ background: var(--snow-weather-color) }

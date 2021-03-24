@@ -6,7 +6,7 @@
   "weather": [
     {
       "id": 600,
-      "main": "Snow",
+      "main": "Mist",
       "description": "light snow",
       "icon": "13n"
     }
