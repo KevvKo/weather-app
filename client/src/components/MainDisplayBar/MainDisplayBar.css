@@ -5,3 +5,7 @@
     text-align: center;
     margin: 10px 5px;
 }
+
+.mainDisplayBar span {
+    margin-left: 5px;
+}

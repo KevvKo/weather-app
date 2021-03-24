@@ -6,6 +6,13 @@ function UpperDisplayBar(){
 
     const data = useContext(WeatherContext)
 
+    const getIconId =  () => {
+
+        if(data.weather) 
+        return data.weather[0].icon
+    }
+    
+
     const getName = () => {
         return data.name
     }
@@ -19,7 +26,10 @@ function UpperDisplayBar(){
     return(
         <div className="upperDisplayBar">
                 <p className="town">{getName()}</p>
-                <p className="weatherDescription">{getWeatherDescription()}</p>
+                <div>
+                    <img type="icon" src={"http://openweathermap.org/img/wn/"+ getIconId() +".png"} />
+                    <span className="weatherDescription">{getWeatherDescription()}</span>
+                </div>
         </div>
     )
 }

@@ -7,6 +7,10 @@
     margin: 10px 5px;
 }
 
+.lowerDisplayBar span {
+    margin-left: 5px;
+}
+
 .wi-thermometer{
     color: var(--max-temp-color);
 }
@@ -14,3 +18,4 @@
 .wi-thermometer-exterior{
     color: var(--min-temp-color);
 }
+
