@@ -4,7 +4,7 @@ import WeatherContext from '../../js/contexts/weatherContext'
 
 function LowerDisplayBar(){
 
-    const data = useContext(WeatherContext)
+    const {data} = useContext(WeatherContext)
 
     const getMaxTemperature = () => {
         if(data.main){

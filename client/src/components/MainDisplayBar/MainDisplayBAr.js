@@ -4,8 +4,7 @@ import WeatherContext from '../../js/contexts/weatherContext'
 
 function MainDisplayBar(){
     
-    const data = useContext(WeatherContext)
-
+    const {data} = useContext(WeatherContext)
     const getTemperature = () => {
         if(data.main){
             return data.main.temp

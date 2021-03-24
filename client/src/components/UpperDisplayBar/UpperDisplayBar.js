@@ -4,7 +4,7 @@ import WeatherContext from '../../js/contexts/weatherContext'
 
 function UpperDisplayBar(){
 
-    const data = useContext(WeatherContext)
+    const {data} = useContext(WeatherContext)
 
     const getIconId =  () => {
 

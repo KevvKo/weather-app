@@ -9,7 +9,7 @@ import LowerDisplayBar from '../LowerDisplayBar/LowerDisplayBar'
 
 function Forecast() {
 
-    const data = useContext(WeatherContext)
+    const {data} = useContext(WeatherContext)
 
     return (
         <div className="forecast">

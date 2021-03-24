@@ -1,43 +1,28 @@
 import './App.css';
 
+import Searchbar from '../Searchbar/Searchbar'
 import Main from '../Main/Main'
 import Footer from '../Footer/Footer'
 
 import WeatherContext  from '../../js/contexts/weatherContext'
-import { useState, useEffect } from 'react'
-import { themeNames } from '../../js/themes'
+import ThemeContext from '../../js/contexts/ThemeContext'
+import { useState, } from 'react'
 
 function App() {
 
-  let [responseObject, setResponseObject] = useState({})
-  let [themeName, setThemeName] = useState('')
+  const [theme, setTheme] = useState ('clear-sky')
+  const [data, setData ] = useState ({})
 
-  useEffect(() => {
-    fetch('mock.json'
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => response.json())
-    .then(data => {
-
-      setResponseObject( data )
-
-      const weatherMain = data.weather[0].main
-
-      if(weatherMain) setThemeName( themeNames[weatherMain])
-      else setThemeName('clear-weather')
-    })
-  }, [])
 
   return (
-    <div className={"app " + themeName} >
-      <WeatherContext.Provider value={responseObject}>
-        <Main/>
-        <Footer/>
-      </WeatherContext.Provider>
+    <div className={'app ' + theme} >
+      <ThemeContext.Provider value={{theme, setTheme}}>
+        <WeatherContext.Provider value={{data, setData}}>
+          <Searchbar/>
+          <Main/>
+          <Footer/>
+        </WeatherContext.Provider>
+      </ThemeContext.Provider>
     </div>
   );
 }
