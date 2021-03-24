@@ -29,8 +29,8 @@ function Searchbar() {
 
             setData(json)
             
-            const weatherMain = json.weather[0].main
-            if(weatherMain) setTheme(themeNames[weatherMain])
+            const weatherMain = json.weather
+            if(weatherMain) setTheme(themeNames[weatherMain[0].main])
 
         })
     }
