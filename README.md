@@ -1,3 +1,7 @@
+# Weather-App
+This is a simple example for a weather app, build with react and the opem weathermap api. 
+Just to play a bit with react context. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
