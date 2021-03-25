@@ -8,13 +8,13 @@ function LowerDisplayBar(){
 
     const getMaxTemperature = () => {
         if(data.main){
-            return data.main.temp_max - 273,15
+            return Math.round((data.main.temp_max - 273.15)*100)/100
         }    
     }
 
     const getMinTemperature = () => {
         if(data.main){
-            return data.main.temp_min - 273,15
+            return Math.round((data.main.temp_min - 273.15)*100)/100
         }    
     }
 

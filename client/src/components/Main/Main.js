@@ -21,9 +21,10 @@ function Main() {
     })
     .then(response => response.json())
     .then( json => {
-      setData(json)
-
+      
       const weatherMain = json.weather[0].main
+
+      setData(json)
       if(weatherMain) setTheme(themeNames[weatherMain])
 
 

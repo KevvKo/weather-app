@@ -7,7 +7,7 @@ function MainDisplayBar(){
     const {data} = useContext(WeatherContext)
     const getTemperature = () => {
         if(data.main){
-            return data.main.temp - 273,15
+            return Math.round((data.main.temp - 273.15)*100)/100
         }
     }
 
